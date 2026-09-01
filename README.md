@@ -96,6 +96,6 @@ This assignment focuses on:
 
 ## 👨‍💻 Author
 
-**Marley Dip**
+***Md Sofian Hasan***
 
 GitHub: [@marleyDip](https://github.com/marleyDip)
