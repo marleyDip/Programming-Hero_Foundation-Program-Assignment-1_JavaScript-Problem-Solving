@@ -30,7 +30,7 @@ function getDayType(day) {
   }
 
   // Convert the input day to lowercase to handle case insensitivity
-  const lowerCaseDay = day.toLowerCase();
+  const lowerCaseDay = day.trim().toLowerCase();
   // console.log("Input day (lowercase):", lowerCaseDay);
 
   // This updates the local parameter "day" within the function scope.
@@ -38,7 +38,7 @@ function getDayType(day) {
 
   // Use a switch statement to determine the type of day
   // switch (day) {
-  switch (lowerCaseDay) {
+  /* switch (lowerCaseDay) {
     case "friday":
     case "saturday":
       return "Weekend";
@@ -52,7 +52,7 @@ function getDayType(day) {
 
     default:
       return "Invalid Day";
-  }
+  } */
 
   // Declare a extra variable to store the result of the witch statement and return it at the end of the function.
   /* let result;
@@ -76,6 +76,86 @@ function getDayType(day) {
   }
 
   return result; */
+
+  // Using if / else if / else statements
+  /* if (lowerCaseDay === "friday" || lowerCaseDay === "saturday") {
+    return "Weekend";
+  } else if (
+    lowerCaseDay === "sunday" ||
+    lowerCaseDay === "monday" ||
+    lowerCaseDay === "tuesday" ||
+    lowerCaseDay === "wednesday" ||
+    lowerCaseDay === "thursday"
+  ) {
+    return "Working Day";
+  } else {
+    return "Invalid Day";
+  } */
+
+  // Using nested ternary operator with array includes method
+  return ["friday", "saturday"].includes(lowerCaseDay)
+    ? "Weekend"
+    : ["sunday", "monday", "tuesday", "wednesday", "thursday"].includes(
+          lowerCaseDay,
+        )
+      ? "Working Day"
+      : "Invalid Day";
+
+  // Using lookup object
+  const daysObject = {
+    friday: "Weekend",
+    saturday: "Weekend",
+    sunday: "Working Day",
+    monday: "Working Day",
+    tuesday: "Working Day",
+    wednesday: "Working Day",
+    thursday: "Working Day",
+  };
+
+  // return daysObject[lowerCaseDay] || "Invalid Day";
+  return daysObject[day.trim().toLowerCase()] ?? "Invalid Day";
+
+  // Using filter method with array and single if
+  const weekend = ["friday", "saturday"];
+  const workingDays = ["sunday", "monday", "tuesday", "wednesday", "thursday"];
+
+  if (weekend.filter((day) => day === lowerCaseDay).length > 0) {
+    return "Weekend";
+  }
+
+  if (workingDays.filter((day) => day === lowerCaseDay).length > 0) {
+    return "Working Day";
+  }
+
+  return "Invalid Day";
+
+  // Using find method with array of objects - simple
+  const daysArrayOfObjects = [
+    { name: "friday", type: "Weekend" },
+    { name: "saturday", type: "Weekend" },
+    { name: "sunday", type: "Working Day" },
+    { name: "monday", type: "Working Day" },
+    { name: "tuesday", type: "Working Day" },
+    { name: "wednesday", type: "Working Day" },
+    { name: "thursday", type: "Working Day" },
+  ];
+
+  const dayFound = daysArrayOfObjects.find((d) => d.name === lowerCaseDay);
+  return dayFound ? dayFound.type : "Invalid Day";
+
+  // Using find method with array of arrays - harder
+  const daysArrayOfArrays = [
+    ["friday", "Weekend"],
+    ["saturday", "Weekend"],
+    ["sunday", "Working Day"],
+    ["monday", "Working Day"],
+    ["tuesday", "Working Day"],
+    ["wednesday", "Working Day"],
+    ["thursday", "Working Day"],
+  ];
+
+  const dayResult = daysArrayOfArrays.find((item) => item[0] === lowerCaseDay);
+  return dayResult ? dayResult[1] : "Invalid Day";
 }
 
 // Test cases

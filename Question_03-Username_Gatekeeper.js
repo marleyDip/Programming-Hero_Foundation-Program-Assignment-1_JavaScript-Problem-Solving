@@ -8,7 +8,7 @@
 The order matters. Look at the third example carefully.
 Call	Returns	Why
 validateUsername("rahim123")	"Available"	passes every rule
-validateUsername("ab")	        "Too Short"	only 2 characters
+validateUsername("ab")	         "Too Short"	only 2 characters
 validateUsername("a b")	"Too Short"	it has a space, but the length rule is checked first
 validateUsername("abcd")	"Available"	exactly 4 is allowed
 validateUsername("rahim islam")	"No Space Allowed"	
