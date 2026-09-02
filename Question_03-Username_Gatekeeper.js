@@ -18,3 +18,32 @@ validateUsername("Admin_Rahim")	"Reserved Word"	capital A must also be caught
 Hint: .length, .includes(), and .toLowerCase().
 
 */
+
+function validateUsername(username) {
+  // Rule 1: Check length first
+  if (username.length < 4) {
+    return "Too Short";
+  }
+
+  // Rule 2: Check for spaces
+  if (username.includes(" ")) {
+    return "No Space Allowed";
+  }
+
+  // Rule 3: Check for "admin" (case-insensitive)
+  if (username.toLowerCase().includes("admin")) {
+    return "Reserved Word";
+  }
+
+  // Rule 4: Everything is valid
+  return "Available";
+}
+
+console.log(validateUsername("rahim123"));
+console.log(validateUsername("ab"));
+console.log(validateUsername("a b"));
+console.log(validateUsername("abcd"));
+console.log(validateUsername("rahim islam"));
+console.log(validateUsername("superadmin99"));
+console.log(validateUsername("Admin_Rahim"));
+console.log(validateUsername("RahimAdmin"));
