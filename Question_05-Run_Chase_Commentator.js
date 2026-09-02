@@ -29,6 +29,19 @@ Hint: use a template string for the sentence. Write it as const getChaseVerdict 
 
 */
 
+// Using a helper function
+function getVerdict(requiredRate) {
+  if (requiredRate <= 6) {
+    return "Comfortable";
+  }
+
+  if (requiredRate <= 12) {
+    return "Tough";
+  }
+
+  return "Almost Impossible";
+}
+
 const getChaseVerdict = (target, scored, ballsLeft) => {
   // Step 1: Calculate runs needed
   const runsNeeded = target - scored;
@@ -46,9 +59,13 @@ const getChaseVerdict = (target, scored, ballsLeft) => {
   // Step 3: Calculate the required run rate
   const requiredRate = (runsNeeded / ballsLeft) * 6;
 
+  // Call function
+  // const verdict = getVerdict(requiredRate);
+
   // Step 4: Determine the verdict based on the required rate
   let verdict;
 
+  // Here, runs need for every over like 6 balls to 6 runs or below, to more than 6 and below 12 runs, more than 12 runs
   if (requiredRate <= 6) {
     verdict = "Comfortable";
   } else if (requiredRate <= 12) {
@@ -58,6 +75,28 @@ const getChaseVerdict = (target, scored, ballsLeft) => {
   }
 
   // const verdict = runsNeeded <= ballsLeft ? "Comfortable" : runsNeeded <= ballsLeft * 2 ? "Tough" : "Almost Impossible";
+
+  // Using a configuration array
+  const rules = [
+    { maxRate: 6, verdict: "Comfortable" },
+    { maxRate: 12, verdict: "Tough" },
+    { maxRate: Infinity, verdict: "Almost Impossible" },
+  ].find((rule) => requiredRate <= rule.maxRate).verdict;
+  // console.log(rules);
+
+  const verdictArrayOfObject = rules.find((rule) => {
+    // console.log(rule);
+    // console.log(rule.maxRate >= requiredRate);
+
+    return rule.maxRate >= requiredRate;
+  }).verdict;
+
+  // Using an array with find()
+  const verdictArrayOfArrays = [
+    [runsNeeded <= ballsLeft, "Comfortable"],
+    [runsNeeded <= ballsLeft * 2, "Tough"],
+    [true, "Almost Impossible"],
+  ].find(([condition]) => condition)[1];
 
   // Step 5: Return the final sentence
   return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${verdict}`;
