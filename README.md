@@ -1,73 +1,162 @@
-# Programming Hero Foundation Program — Assignment 1
+# 🚀 Programming Hero Foundation Program — Assignment 1
 
-A JavaScript problem-solving assignment focused on building a strong foundation in programming logic, conditional statements, functions, operators, and basic JavaScript concepts.
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Problems Solved](https://img.shields.io/badge/Problems%20Solved-5%2F5-success?style=for-the-badge)](#-assignment-progress)
+[![Completion](https://img.shields.io/badge/Completion-100%25-brightgreen?style=for-the-badge)](#-assignment-progress)
+[![Programming Hero](https://img.shields.io/badge/Programming%20Hero-Foundation%20Program-blue?style=for-the-badge)](https://www.programming-hero.com/)
 
-## 📚 Assignment Questions
+A JavaScript problem-solving assignment from the **Programming Hero Foundation Program**, designed to strengthen core JavaScript fundamentals through practical programming challenges.
 
-### Question 1 — Value Detective
-Detects the type and truthiness/falsiness of a given JavaScript value.
+The assignment covers **data types, truthy/falsy values, conditional logic, switch statements, functions, operators, string methods, arithmetic calculations, and problem-solving techniques**.
 
-**Concepts:**
+---
+
+## 📚 Table of Contents
+
+- [🎯 Assignment Overview](#-assignment-overview)
+- [🧩 Assignment Questions](#-assignment-questions)
+- [🛠️ Technologies & Concepts](#️-technologies--concepts)
+- [📁 Project Structure](#-project-structure)
+- [📊 Assignment Progress](#-assignment-progress)
+- [▶️ How to Run](#️-how-to-run)
+- [🎓 Learning Outcomes](#-learning-outcomes)
+- [👨‍💻 Author](#-author)
+
+---
+
+## 🎯 Assignment Overview
+
+This assignment contains **5 JavaScript problem-solving challenges**.
+
+Each problem focuses on a specific programming concept and encourages writing simple, readable, and logical JavaScript solutions.
+
+| # | Problem | Main Concept | Status |
+|---|---|---|---|
+| 01 | 🔍 Value Detective | `typeof`, Truthy/Falsy | ✅ Completed |
+| 02 | 🇧🇩 Bangladesh Weekend Machine | `switch`, Conditions | ✅ Completed |
+| 03 | 🔐 Username Gatekeeper | Validation & Logic | ✅ Completed |
+| 04 | 🚕 Dhaka CNG Fare Meter | Arithmetic & Conditions | ✅ Completed |
+| 05 | 🏏 Run Chase Commentator | Functions & Conditional Logic | ✅ Completed |
+
+---
+
+## 🧩 Assignment Questions
+
+### 01 — 🔍 Value Detective
+
+Determines the **data type** and whether a JavaScript value is **truthy or falsy**.
+
+**Key Concepts:**
+
 - `typeof`
 - Truthy & Falsy values
 - Ternary operator
 - Template literals
+- JavaScript data types
 
 ---
 
-### Question 2 — Bangladesh Weekend Machine
-Determines whether a given day is a weekend, working day, or invalid day.
+### 02 — 🇧🇩 Bangladesh Weekend Machine
 
-**Concepts:**
+Determines whether a given day is a **Weekend**, **Working Day**, or **Invalid Day**.
+
+**Weekend:**
+
+- Friday
+- Saturday
+
+**Working Days:**
+
+- Sunday
+- Monday
+- Tuesday
+- Wednesday
+- Thursday
+
+**Key Concepts:**
+
 - `switch`
 - `case`
 - `default`
 - `toLowerCase()`
-- Case-insensitive input
+- Case-insensitive comparison
 
 ---
 
-### Question 3 — Username Gatekeeper
-Validates a username based on the given conditions.
+### 03 — 🔐 Username Gatekeeper
 
-**Concepts:**
-- Conditional logic
-- String methods
+Validates a username according to the assignment's specified rules.
+
+**Key Concepts:**
+
+- Conditional statements
 - Comparison operators
 - Logical operators
+- String methods
+- Input validation
+- Boolean logic
 
 ---
 
-### Question 4 — Dhaka CNG Fare Meter
-Calculates a CNG fare based on the provided distance and fare rules.
+### 04 — 🚕 Dhaka CNG Fare Meter
 
-**Concepts:**
+Calculates the CNG fare according to the provided distance and fare rules.
+
+**Key Concepts:**
+
 - Arithmetic operators
 - Conditional logic
 - Functions
 - Mathematical calculations
+- Numerical comparison
 
 ---
 
-### Question 5 — Run Chase Commentator
-Generates a cricket run-chase message based on the target and current score.
+### 05 — 🏏 Run Chase Commentator
 
-**Concepts:**
+Generates an appropriate cricket run-chase verdict based on the **target, current score, and balls remaining**.
+
+The solution determines whether the team has:
+
+- Already won
+- Lost because no balls remain
+- A required run rate to calculate
+
+**Key Concepts:**
+
+- Functions
+- Arithmetic operations
 - Conditional statements
 - Comparison operators
-- Arithmetic operations
-- Functions
+- Required run rate calculation
+- Template literals
 
 ---
 
-## 🛠️ Technologies
+## 🛠️ Technologies & Concepts
 
-- JavaScript (ES6+)
-- Basic Problem Solving
+### Technology
+
+- 🟨 JavaScript ES6+
+
+### Core Concepts
+
+- Variables
+- Data Types
+- `typeof`
+- Truthy & Falsy
+- Conditional Statements
+- `switch`
 - Functions
-- Conditional Logic
-- Operators
+- Arrow Functions
+- Comparison Operators
+- Logical Operators
+- Arithmetic Operators
 - String Methods
+- Template Literals
+- Basic Problem Solving
+
+---
 
 ## 📁 Project Structure
 
@@ -83,19 +172,99 @@ Programming-Hero_Foundation-Program-Assignment-1_JavaScript-Problem-Solving/
 └── README.md
 ```
 
-## 🎯 Learning Goals
+---
 
-This assignment focuses on:
+## 📊 Assignment Progress
 
-- Improving JavaScript fundamentals
-- Developing problem-solving skills
-- Understanding conditional logic
-- Practicing functions and operators
+### 🎉 5 / 5 Problems Completed
+
+```text
+████████████████████████████████████████ 100%
+```
+
+| Category | Result |
+|---|---:|
+| Problems Completed | **5 / 5** |
+| Completion | **100%** |
+| JavaScript | **ES6+** |
+| Assignment Status | **Completed ✅** |
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+### 2. Navigate to the project
+
+```bash
+cd Programming-Hero_Foundation-Program-Assignment-1_JavaScript-Problem-Solving
+```
+
+### 3. Run a specific solution
+
+Using Node.js:
+
+```bash
+node Question_01-Value_Detective.js
+```
+
+Or run any of the other files:
+
+```bash
+node Question_02-Bangladesh_Weekend_Machine.js
+node Question_03-Username_Gatekeeper.js
+node Question_04-Dhaka_CNG_Fare_Meter.js
+node Question_05-Run_Chase_Commentator.js
+```
+
+---
+
+## 🎓 Learning Outcomes
+
+Through this assignment, I practiced:
+
+- Writing reusable JavaScript functions
+- Understanding JavaScript data types
+- Working with truthy and falsy values
+- Building conditional logic
+- Using `switch` statements effectively
+- Performing mathematical calculations
+- Validating input using logical conditions
+- Solving real-world programming problems
 - Writing clean and readable JavaScript
-- Applying ES6+ concepts to practical problems
+- Improving algorithmic and problem-solving skills
+
+---
+
+## 💡 Why This Assignment Matters
+
+Small programming problems are a great way to develop strong problem-solving fundamentals.
+
+Instead of focusing only on syntax, this assignment helped me practice **breaking a problem into conditions, identifying the required logic, and converting that logic into clean JavaScript code**.
+
+---
 
 ## 👨‍💻 Author
 
-**_Md Sofian Hasan_**
+### Md. Sofian Hasan
 
-GitHub: [@marleyDip](https://github.com/marleyDip)
+**Software Engineer | MERN / PERN Developer**
+
+Focused on building modern web applications and continuously improving JavaScript, problem-solving, and full-stack development skills.
+
+⭐ If you find this repository useful, feel free to explore the solutions and follow my learning journey.
+
+---
+
+## 📌 Assignment Status
+
+> ✅ **Assignment 1 — Completed Successfully**
+>
+> **5 / 5 Problems Solved — 100% Completion**
+
+Built as part of the **Programming Hero Foundation Program**.
