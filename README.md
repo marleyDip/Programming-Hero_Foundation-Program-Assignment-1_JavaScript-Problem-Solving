@@ -18,8 +18,6 @@ A JavaScript problem-solving assignment from the **Programming Hero Foundation P
 
 The assignment covers **data types, truthy/falsy values, conditional logic, switch statements, functions, operators, string methods, arithmetic calculations, and problem-solving techniques**.
 
----
-
 ## 🚀 Live Demo
 
 <div align="center">
