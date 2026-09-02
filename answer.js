@@ -15,27 +15,6 @@ function describeValue(value) {
 
   // Return the formatted string with type and truthiness
   return `${type} | ${truthiness}`;
-
-  // Using a array and join method to convert the type and boolean value to a string.
-  // return [typeof value, Boolean(value) ? "truthy" : "falsy"].join(" | ");
-
-  // Used an extra variable to store the result and returned it using string concatenation instead of template literals. This is a traditional if-else statement.
-  /* let status;
-
-  if (Boolean(value)) {
-    status = "truthy";
-  } else {
-    status = "falsy";
-  }
-
-  return typeof value + " | " + status; */
-
-  // Using a single if statement to check the truthiness of the value and return the appropriate string.
-  /* if (value) {
-    return typeof value + " | truthy";
-  }
-
-  return typeof value + " | falsy"; */
 }
 
 //Question No. 2 - Bangladesh Weekend Machine
@@ -64,29 +43,6 @@ function getDayType(day) {
     default:
       return "Invalid Day";
   }
-
-  // Declare a extra variable to store the result of the witch statement and return it at the end of the function.
-  /* let result;
-
-  switch (day.toUpperCase()) {
-    case "FRIDAY":
-    case "SATURDAY":
-      result = "Weekend";
-      break;
-
-    case "SUNDAY":
-    case "MONDAY":
-    case "TUESDAY":
-    case "WEDNESDAY":
-    case "THURSDAY":
-      result = "Working Day";
-      break;
-
-    default:
-      result = "Invalid Day";
-  }
-
-  return result; */
 }
 
 //Question No. 3 - Username Gatekeeper
