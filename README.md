@@ -20,6 +20,25 @@ The assignment covers **data types, truthy/falsy values, conditional logic, swit
 
 ---
 
+## 🚀 Live Demo
+
+<div align="center">
+
+<a href="https://marleydip.github.io/Programming-Hero_Foundation-Program-Assignment-1_JavaScript-Problem-Solving/" target="_blank">
+
+<img src="https://img.shields.io/badge/🚀_Try_Interactive_Playground-7C3AED?style=for-the-badge" alt="Try Interactive Playground" />
+
+</a>
+
+<p>
+  Explore all 5 JavaScript problems interactively.
+  View the original code, enter your own values, and see the output instantly.
+</p>
+
+</div>
+
+---
+
 ## 📚 Table of Contents
 
 - [🎯 Assignment Overview](#-assignment-overview)
