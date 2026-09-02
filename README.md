@@ -1,18 +1,10 @@
 # 🚀 Programming Hero Foundation Program — Assignment 1
 
-<<<<<<< HEAD
 <h4 align="center">
   JavaScript Problem Solving
 </h4>
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-=======
-<h5 align="center">
-  <strong>JavaScript Problem Solving</strong>
-</p>
-
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
->>>>>>> f46efaf0b72f0743c2d64ca345f30911885c9ac2
 [![Problems Solved](https://img.shields.io/badge/Problems%20Solved-5%2F5-success?style=for-the-badge)](#-assignment-progress)
 [![Completion](https://img.shields.io/badge/Assignment-01-8A2BE2?style=for-the-badge)](#-assignment-progress)
 [![Completion](https://img.shields.io/badge/Completion-100%25-orange?style=for-the-badge)](#-assignment-progress)
