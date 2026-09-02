@@ -1,14 +1,32 @@
 # 🚀 Programming Hero Foundation Program — Assignment 1
 
-<h4 align="center">
+<h3 align="center">
   JavaScript Problem Solving
-</h4>
+</h3>
+
+<div align="center">
+
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+[![Problems Solved](https://img.shields.io/badge/Problems%20Solved-5%2F5-success?style=for-the-badge)](#-assignment-progress)
+
+[![Assignment](https://img.shields.io/badge/Assignment-01-8A2BE2?style=for-the-badge)](#-assignment-progress)
+
+[![Completion](https://img.shields.io/badge/Completion-100%25-orange?style=for-the-badge)](#-assignment-progress)
+
+[![Programming Hero](https://img.shields.io/badge/Programming%20Hero-Foundation%20Program-blue?style=for-the-badge)](https://www.programming-hero.com/)
+
+</div>
+
+<div align="center">
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Problems Solved](https://img.shields.io/badge/Problems%20Solved-5%2F5-success?style=for-the-badge)](#-assignment-progress)
-[![Completion](https://img.shields.io/badge/Assignment-01-8A2BE2?style=for-the-badge)](#-assignment-progress)
+[![Assignment](https://img.shields.io/badge/Assignment-01-8A2BE2?style=for-the-badge)](#-assignment-progress)
 [![Completion](https://img.shields.io/badge/Completion-100%25-orange?style=for-the-badge)](#-assignment-progress)
 [![Programming Hero](https://img.shields.io/badge/Programming%20Hero-Foundation%20Program-blue?style=for-the-badge)](https://www.programming-hero.com/)
+
+</div>
 
 A JavaScript problem-solving assignment from the **Programming Hero Foundation Program**, designed to strengthen core JavaScript fundamentals through practical programming challenges.
 
