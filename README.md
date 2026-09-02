@@ -1,5 +1,20 @@
 # 🚀 Programming Hero Foundation Program — Assignment 1
 
+<p align="center">
+  <strong>JavaScript Problem Solving</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Problem%20Solving-4%20Questions-3178C6?style=for-the-badge" alt="Problem Solving">
+  <img src="https://img.shields.io/badge/Assignment-01-8A2BE2?style=for-the-badge" alt="Assignment">
+  <img src="https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge" alt="Status">
+</p>
+
+<p align="center">
+  A JavaScript problem-solving assignment from the Programming Hero Foundation Program.
+</p>
+
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Problems Solved](https://img.shields.io/badge/Problems%20Solved-5%2F5-success?style=for-the-badge)](#-assignment-progress)
 [![Completion](https://img.shields.io/badge/Completion-100%25-brightgreen?style=for-the-badge)](#-assignment-progress)
@@ -228,15 +243,21 @@ node Question_05-Run_Chase_Commentator.js
 
 Through this assignment, I practiced:
 
+- Analyze programming problems before coding
+- Breaking problems into smaller logical steps
+- Convert requirements into logical conditions
 - Writing reusable JavaScript functions
 - Understanding JavaScript data types
 - Working with truthy and falsy values
 - Building conditional logic
 - Using `switch` statements effectively
+- Manipulate strings
 - Performing mathematical calculations
 - Validating input using logical conditions
 - Solving real-world programming problems
+- Create meaningful test cases
 - Writing clean and readable JavaScript
+- Think through edge cases and alternative solutions
 - Improving algorithmic and problem-solving skills
 
 ---
@@ -253,11 +274,47 @@ Instead of focusing only on syntax, this assignment helped me practice **breakin
 
 ### Md. Sofian Hasan
 
-**Software Engineer | MERN / PERN Developer**
+<div align="center">
+  <h1>✨ Md. Sofian Hasan ✨</h1>
+  
+  <p align="center">
+    <a href="https://marleydip.netlify.app/" target="_blank">
+      <img src="https://shields.io" alt="Live Demo" />
+    </a>
+    <a href="https://github.com" target="_blank">
+      <img src="https://shields.io" alt="GitHub Repo" />
+    </a>
+  </p>
+</div>
+
+**_Software Engineer | Full-Stack Developer_**
 
 Focused on building modern web applications and continuously improving JavaScript, problem-solving, and full-stack development skills.
 
-⭐ If you find this repository useful, feel free to explore the solutions and follow my learning journey.
+### Tech Focus
+
+```text
+JavaScript
+React
+Next.js
+Node.js
+Express.js
+Nest.js
+MongoDB
+PostgreSQL
+MERN
+PERN
+```
+
+---
+
+<p align="center">
+  ⭐ If you find this repository useful, feel free to explore the solutions and follow my learning journey.
+</p>
+
+<p align="center">
+  Built while learning and practicing JavaScript problem solving.
+</p>
 
 ---
 
