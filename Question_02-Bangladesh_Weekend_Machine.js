@@ -38,7 +38,7 @@ function getDayType(day) {
 
   // Use a switch statement to determine the type of day
   // switch (day) {
-  /* switch (lowerCaseDay) {
+  switch (lowerCaseDay) {
     case "friday":
     case "saturday":
       return "Weekend";
@@ -52,10 +52,10 @@ function getDayType(day) {
 
     default:
       return "Invalid Day";
-  } */
+  }
 
   // Declare a extra variable to store the result of the witch statement and return it at the end of the function.
-  /* let result;
+  let result;
 
   switch (day.toUpperCase()) {
     case "FRIDAY":
@@ -75,10 +75,10 @@ function getDayType(day) {
       result = "Invalid Day";
   }
 
-  return result; */
+  return result;
 
   // Using if / else if / else statements
-  /* if (lowerCaseDay === "friday" || lowerCaseDay === "saturday") {
+  if (lowerCaseDay === "friday" || lowerCaseDay === "saturday") {
     return "Weekend";
   } else if (
     lowerCaseDay === "sunday" ||
@@ -90,7 +90,7 @@ function getDayType(day) {
     return "Working Day";
   } else {
     return "Invalid Day";
-  } */
+  }
 
   // Using nested ternary operator with array includes method
   return ["friday", "saturday"].includes(lowerCaseDay)
