@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Interactive JavaScript Problem Solving Playground - Programming Hero Foundation Program Assignment 1"
+    />
+
+    <title>JavaScript Problem Solving | Assignment 01</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <div class="container nav">
+        <a href="#" class="logo">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span>JS<span class="logo-highlight">Solve</span></span>
+        </a>
+
+        <div class="nav-right">
+          <span class="assignment-badge"> Assignment 01 </span>
+
+          <a
+            href="https://github.com/marleyDip/Programming-Hero_Foundation-Program-Assignment-1_JavaScript-Problem-Solving"
+            target="_blank"
+            class="github-link"
+          >
+            GitHub ↗
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-badge">
+            <span class="pulse"></span>
+            Programming Hero Foundation Program
+          </div>
+
+          <h1>
+            JavaScript
+            <span>Problem Solving</span>
+            Playground
+          </h1>
+
+          <p>
+            Explore all 5 assignment solutions and test them interactively with
+            your own input directly in the browser.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>05</strong>
+              <span>Problems</span>
+            </div>
+
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Completed</span>
+            </div>
+
+            <div class="stat">
+              <strong>ES6+</strong>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROBLEMS ================= -->
+      <section class="problems-section">
+        <div class="container">
+          <!-- ================= QUESTION 01 ================= -->
+          <article class="problem-card">
+            <div class="problem-top">
+              <div class="question-number">01</div>
+
+              <div class="problem-info">
+                <div class="card-top">
+                  <span class="question-label"> QUESTION 01 </span>
+                  <span class="concept"> typeof • Truthy/Falsy </span>
+                </div>
+
+                <h2>Value Detective</h2>
+
+                <p>
+                  Detect the JavaScript data type and determine whether the
+                  value is truthy or falsy.
+                </p>
+              </div>
+            </div>
+
+            <!-- ORIGINAL CODE -->
+            <div class="code-container">
+              <div class="code-header">
+                <span>ORIGINAL CODE</span>
+
+                <span class="language"> JavaScript </span>
+              </div>
+
+              <pre><code>const describeValue = (value) => 
+  `${typeof value} | ${Boolean(value) ? "Truthy" : "falsy"}`;
+
+function describeValue(value) {
+  const type = typeof value;
+  const truthiness = value ? "truthy" : "falsy";
+
+  return `${type} | ${truthiness}`;
+}</code></pre>
+            </div>
+
+            <!-- INPUT -->
+            <div class="input-container">
+              <label for="valueInput"> Enter Value </label>
+
+              <div class="input-row">
+                <input
+                  type="text"
+                  id="valueInput"
+                  placeholder="Try: hello, 0, false, null"
+                />
+
+                <button class="run-btn" id="valueBtn">
+                  Run
+                  <span>▶</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- RESULT -->
+            <div class="result-box" id="valueResult">
+              <div class="result-row">
+                <span class="result-label"> INPUT </span>
+
+                <span class="input-display" id="valueInputDisplay"> — </span>
+              </div>
+
+              <div class="result-divider"></div>
+
+              <div class="result-row">
+                <span class="result-label"> OUTPUT </span>
+
+                <span class="result-text" id="valueOutput">
+                  Waiting for input...
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= QUESTION 02 ================= -->
+          <article class="problem-card">
+            <div class="problem-top">
+              <div class="question-number">02</div>
+
+              <div class="problem-info">
+                <div class="card-top">
+                  <span class="question-label"> QUESTION 02 </span>
+                  <span class="concept"> switch • Conditions </span>
+                </div>
+
+                <h2>Bangladesh Weekend Machine</h2>
+
+                <p>
+                  Determine whether a given day is a weekend, working day, or
+                  invalid day.
+                </p>
+              </div>
+            </div>
+
+            <!-- ORIGINAL CODE -->
+            <div class="code-container">
+              <div class="code-header">
+                <span>ORIGINAL CODE</span>
+
+                <span class="language"> JavaScript </span>
+              </div>
+
+              <pre><code>function getDayType(day) {
+  // Using lookup object
+  const daysObject = {
+    friday: "Weekend",
+    saturday: "Weekend",
+    sunday: "Working Day",
+    monday: "Working Day",
+    tuesday: "Working Day",
+    wednesday: "Working Day",
+    thursday: "Working Day",
+  };
+
+  return daysObject[day.trim().toLowerCase()] || "Invalid Day";
+}</code></pre>
+            </div>
+
+            <!-- INPUT -->
+            <div class="input-container">
+              <label for="dayInput"> Enter Day </label>
+
+              <div class="input-row">
+                <input type="text" id="dayInput" placeholder="Try: Friday" />
+
+                <button class="run-btn" id="dayBtn">
+                  Run
+                  <span>▶</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- RESULT -->
+            <div class="result-box" id="dayResult">
+              <div class="result-row">
+                <span class="result-label"> INPUT </span>
+
+                <span class="input-display" id="dayInputDisplay"> — </span>
+              </div>
+
+              <div class="result-divider"></div>
+
+              <div class="result-row">
+                <span class="result-label"> OUTPUT </span>
+
+                <span class="result-text" id="dayOutput">
+                  Waiting for input...
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= QUESTION 03 ================= -->
+          <article class="problem-card">
+            <div class="problem-top">
+              <div class="question-number">03</div>
+
+              <div class="problem-info">
+                <div class="card-top">
+                  <span class="question-label"> QUESTION 03 </span>
+                  <span class="concept"> Validation • Strings </span>
+                </div>
+
+                <h2>Username Gatekeeper</h2>
+
+                <p>
+                  Validate a username against length, spaces, and reserved-word
+                  rules.
+                </p>
+              </div>
+            </div>
+
+            <!-- ORIGINAL CODE -->
+            <div class="code-container">
+              <div class="code-header">
+                <span>ORIGINAL CODE</span>
+
+                <span class="language"> JavaScript </span>
+              </div>
+
+              <pre><code>function validateUsername(username) {
+  // Using find method with array of arrays
+  const result = [
+  [username.length &lt 4, "Too Short"],
+  [username.includes(" "), "No Space Allowed"],
+  [username.toLowerCase().includes("admin"), "Reserved Word"],
+  ].find(([condition]) => condition)[1];
+
+  return result ?? "Available";
+}</code></pre>
+            </div>
+
+            <!-- INPUT -->
+            <div class="input-container">
+              <label for="usernameInput"> Enter Username </label>
+
+              <div class="input-row">
+                <input
+                  type="text"
+                  id="usernameInput"
+                  placeholder="Try: sofian123"
+                />
+
+                <button class="run-btn" id="usernameBtn">
+                  Run
+                  <span>▶</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- RESULT -->
+            <div class="result-box" id="usernameResult">
+              <div class="result-row">
+                <span class="result-label"> INPUT </span>
+
+                <span class="input-display" id="usernameInputDisplay"> — </span>
+              </div>
+
+              <div class="result-divider"></div>
+
+              <div class="result-row">
+                <span class="result-label"> OUTPUT </span>
+
+                <span class="result-text" id="usernameOutput">
+                  Waiting for input...
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= QUESTION 04 ================= -->
+          <article class="problem-card">
+            <div class="problem-top">
+              <div class="question-number">04</div>
+
+              <div class="problem-info">
+                <div class="card-top">
+                  <span class="question-label"> QUESTION 04 </span>
+                  <span class="concept"> Arithmetic • Default Parameters </span>
+                </div>
+
+                <h2>Dhaka CNG Fare Meter</h2>
+
+                <p>
+                  Calculate the CNG fare based on distance, waiting time, and
+                  night-time pricing.
+                </p>
+              </div>
+            </div>
+
+            <!-- ORIGINAL CODE -->
+            <div class="code-container">
+              <div class="code-header">
+                <span>ORIGINAL CODE</span>
+
+                <span class="language"> JavaScript </span>
+              </div>
+
+              <pre><code>const getCngFare = (distance, isNight = false, waitingMinutes = 0) => 
+ (50 + Math.max(0, distance - 2) * 15 + waitingMinutes * 2) * (isNight ? 1.2 : 1);
+
+function getCngFare(
+  distance,
+  isNight = false,
+  waitingMinutes = 0
+) {
+  let fare = 50;
+
+  fare += distance > 2 ? (distance - 2) * 15 : 0;
+  fare = fare + waitingMinutes * 2;
+  fare = isNight ? fare * 1.2 : fare;
+
+  return fare;
+}</code></pre>
+            </div>
+
+            <!-- INPUT -->
+            <div class="input-container">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="distanceInput"> Distance (km) </label>
+
+                  <input
+                    type="number"
+                    id="distanceInput"
+                    placeholder="e.g. 5"
+                    min="0"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="waitingInput"> Waiting Minutes </label>
+
+                  <input
+                    type="number"
+                    id="waitingInput"
+                    placeholder="e.g. 10"
+                    min="0"
+                  />
+                </div>
+
+                <div class="form-group checkbox-group">
+                  <label> Night Ride </label>
+
+                  <label class="switch">
+                    <input type="checkbox" id="nightInput" />
+
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="run-btn full-btn" id="cngBtn">
+                Calculate Fare
+                <span>▶</span>
+              </button>
+            </div>
+
+            <!-- RESULT -->
+            <div class="result-box" id="cngResult">
+              <div class="result-row">
+                <span class="result-label"> INPUT </span>
+
+                <span class="input-display" id="cngInputDisplay"> — </span>
+              </div>
+
+              <div class="result-divider"></div>
+
+              <div class="result-row">
+                <span class="result-label"> OUTPUT </span>
+
+                <span class="result-text" id="cngOutput">
+                  Waiting for input...
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================= QUESTION 05 ================= -->
+          <article class="problem-card">
+            <div class="problem-top">
+              <div class="question-number">05</div>
+
+              <div class="problem-info">
+                <div class="card-top">
+                  <span class="question-label"> QUESTION 05 </span>
+                  <span class="concept"> Functions • Run Rate </span>
+                </div>
+
+                <h2>Run Chase Commentator</h2>
+
+                <p>
+                  Analyze a cricket run chase and determine the required run
+                  rate and match verdict.
+                </p>
+              </div>
+            </div>
+
+            <!-- ORIGINAL CODE -->
+            <div class="code-container">
+              <div class="code-header">
+                <span>ORIGINAL CODE</span>
+
+                <span class="language"> JavaScript </span>
+              </div>
+
+              <pre><code>const getChaseVerdict = (target, scored, ballsLeft) =&gt; {
+  const runsNeeded = target - scored;
+
+  if (runsNeeded &lt;= 0) return "Won";
+  if (ballsLeft &lt;= 0) return "Lost";
+
+  const requiredRate = (runsNeeded / ballsLeft) * 6;
+
+  let verdict;
+
+  if (requiredRate &lt;= 6) {
+    verdict = "Comfortable";
+  } else if (requiredRate &lt;= 12) {
+    verdict = "Tough";
+  } else {
+    verdict = "Almost Impossible";
+  }
+
+  // const verdict = runsNeeded &lt;= ballsLeft ? "Comfortable" : runsNeeded &lt;= ballsLeft * 2 ? "Tough" : "Almost Impossible";
+
+  return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${verdict}`;
+};</code></pre>
+            </div>
+
+            <!-- INPUT -->
+            <div class="input-container">
+              <div class="form-grid three-columns">
+                <div class="form-group">
+                  <label for="targetInput"> Target </label>
+
+                  <input
+                    type="number"
+                    id="targetInput"
+                    placeholder="e.g. 180"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="scoredInput"> Scored </label>
+
+                  <input
+                    type="number"
+                    id="scoredInput"
+                    placeholder="e.g. 120"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="ballsInput"> Balls Left </label>
+
+                  <input type="number" id="ballsInput" placeholder="e.g. 30" />
+                </div>
+              </div>
+
+              <button class="run-btn full-btn" id="chaseBtn">
+                Analyze Chase
+                <span>▶</span>
+              </button>
+            </div>
+
+            <!-- RESULT -->
+            <div class="result-box" id="chaseResult">
+              <div class="result-row">
+                <span class="result-label"> INPUT </span>
+
+                <span class="input-display" id="chaseInputDisplay"> — </span>
+              </div>
+
+              <div class="result-divider"></div>
+
+              <div class="result-row">
+                <span class="result-label"> OUTPUT </span>
+
+                <span class="result-text" id="chaseOutput">
+                  Waiting for input...
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= HOW IT WORKS ================= -->
+      <section class="info-section">
+        <div class="container">
+          <div class="section-heading center-heading">
+            <span class="section-label"> HOW IT WORKS </span>
+
+            <h2>Learn. Enter. Run.</h2>
+
+            <p>
+              A simple interactive way to understand the logic behind each
+              JavaScript problem.
+            </p>
+          </div>
+
+          <div class="steps">
+            <div class="step">
+              <span class="step-number"> 01 </span>
+
+              <h3>Choose a Problem</h3>
+
+              <p>Select any of the five assignment challenges.</p>
+            </div>
+
+            <div class="step">
+              <span class="step-number"> 02 </span>
+
+              <h3>Enter Your Input</h3>
+
+              <p>Provide your own values in the input fields.</p>
+            </div>
+
+            <div class="step">
+              <span class="step-number"> 03 </span>
+
+              <h3>Run the Solution</h3>
+
+              <p>
+                Execute the corresponding JavaScript function and instantly see
+                the result.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <strong> &lt;/&gt; JavaScript Problem Solving </strong>
+          <p>Programming Hero Foundation Program — Assignment 01</p>
+        </div>
+
+        <div class="footer-author">
+          <span> Built by </span>
+          <strong>
+            <a
+              href="https://marleydip.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Md. Sofian Hasan
+            </a>
+          </strong>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="./script.js"></script>
+  </body>
+</html>
