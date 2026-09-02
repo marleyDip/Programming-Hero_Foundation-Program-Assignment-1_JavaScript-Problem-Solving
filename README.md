@@ -274,10 +274,10 @@ Instead of focusing only on syntax, this assignment helped me practice **breakin
 
 <div align="center">
 
-  <h3>✨ Md. Sofian Hasan ✨</h3>
+  <h2>✨ Md. Sofian Hasan ✨</h2>
 
   <p>
-    <strong>Software Engineer | Full-Stack Developer</strong>
+    <strong>Software Engineer | Full-Stack (MERN / PERN) Developer</strong>
   </p>
 
   <p>
