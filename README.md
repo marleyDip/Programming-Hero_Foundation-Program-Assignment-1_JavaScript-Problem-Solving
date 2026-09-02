@@ -4,13 +4,6 @@
   <strong>JavaScript Problem Solving</strong>
 </p>
 
-<p align="center">
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Problems Solved](https://img.shields.io/badge/Problems%20Solved-5%2F5-success?style=for-the-badge)](#-assignment-progress)
-[![Completion](https://img.shields.io/badge/Completion-100%25-brightgreen?style=for-the-badge)](#-assignment-progress)
-[![Programming Hero](https://img.shields.io/badge/Programming%20Hero-Foundation%20Program-blue?style=for-the-badge)](https://www.programming-hero.com/)
-</p>
-
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Problems Solved](https://img.shields.io/badge/Problems%20Solved-5%2F5-success?style=for-the-badge)](#-assignment-progress)
 [![Completion](https://img.shields.io/badge/Completion-100%25-brightgreen?style=for-the-badge)](#-assignment-progress)
