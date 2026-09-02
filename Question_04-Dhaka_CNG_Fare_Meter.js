@@ -28,7 +28,21 @@ Night fare = base fare × 1.20
 
 // const getCngFare = (distance, isNight = false, waitingMinutes = 0) => (50 + Math.max(0, distance - 2) * 15 + waitingMinutes * 2) * (isNight ? 1.2 : 1);
 
+// Using a helper function
+const getDistanceFare = function (distance) {
+  if (distance <= 2) {
+    return 50;
+  }
+
+  return 50 + (distance - 2) * 15;
+};
+
 function getCngFare(distance, isNight = false, waitingMinutes = 0) {
+  // let fare = 50 + Math.max(0, distance - 2) * 15 + waitingMinutes * 2;
+  // if (isNight) fare *= 1.2;
+
+  // let fare = getDistanceFare(distance);
+
   // Step 1: Calculate the base fare
   let fare = 50; // Minimum fare for the first 2 km
 
@@ -36,6 +50,8 @@ function getCngFare(distance, isNight = false, waitingMinutes = 0) {
   if (distance > 2) {
     fare += (distance - 2) * 15;
   }
+
+  // fare += distance > 2 ? (distance - 2) * 15 : 0;
 
   // Step 3: Add waiting charge
   fare = fare + waitingMinutes * 2;
@@ -54,6 +70,14 @@ function getCngFare(distance, isNight = false, waitingMinutes = 0) {
   fare = isNight ? fare * 1.2 : fare; */
 
   return fare;
+
+  // Using an array and reduce()
+  let fare1 = [50, Math.max(0, distance - 2) * 15, waitingMinutes * 2].reduce(
+    (total, charge) => total + charge,
+    0,
+  );
+
+  return isNight ? fare1 * 1.2 : fare1;
 }
 
 console.log(getCngFare(2)); // 50
