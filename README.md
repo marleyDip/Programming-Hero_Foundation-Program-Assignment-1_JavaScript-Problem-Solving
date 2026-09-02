@@ -272,48 +272,50 @@ Instead of focusing only on syntax, this assignment helped me practice **breakin
 
 ## 👨‍💻 Author
 
-### Md. Sofian Hasan
-
 <div align="center">
-  <h1>✨ Md. Sofian Hasan ✨</h1>
-  
-  <p align="center">
+
+  <h3>✨ Md. Sofian Hasan ✨</h3>
+
+  <p>
+    <strong>Software Engineer | Full-Stack Developer</strong>
+  </p>
+
+  <p>
     <a href="https://marleydip.netlify.app/" target="_blank">
-      <img src="https://shields.io" alt="Live Demo" />
+      <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge" alt="Portfolio" />
     </a>
-    <a href="https://github.com" target="_blank">
-      <img src="https://shields.io" alt="GitHub Repo" />
+    <a href="https://github.com/marleyDip" target="_blank">
+      <img src="https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github" alt="GitHub Profile" />
     </a>
   </p>
+
 </div>
 
-**_Software Engineer | Full-Stack Developer_**
+<p align="center">
+  Passionate about building <strong>modern, scalable, and user-focused web applications</strong> while continuously strengthening JavaScript, problem-solving, and full-stack development skills.
+</p>
 
-Focused on building modern web applications and continuously improving JavaScript, problem-solving, and full-stack development skills.
+### 🚀 Tech Focus
 
-### Tech Focus
+<div align="center">
 
-```text
-JavaScript
-React
-Next.js
-Node.js
-Express.js
-Nest.js
-MongoDB
-PostgreSQL
-MERN
-PERN
-```
+<img src="https://skillicons.dev/icons?i=js,react,nextjs,nodejs,express,nestjs,mongodb,postgres" alt="Tech Stack" />
+
+<br /><br />
+
+<img src="https://img.shields.io/badge/MERN-Stack-61DAFB?style=for-the-badge" alt="MERN Stack" />
+<img src="https://img.shields.io/badge/PERN-Stack-336791?style=for-the-badge" alt="PERN Stack" />
+
+</div>
 
 ---
 
 <p align="center">
-  ⭐ If you find this repository useful, feel free to explore the solutions and follow my learning journey.
+  ⭐ <strong>If you find this repository useful, feel free to explore the solutions and follow my learning journey.</strong>
 </p>
 
 <p align="center">
-  Built while learning and practicing JavaScript problem solving.
+  📚 Built as part of my journey to strengthen <strong>JavaScript fundamentals & problem-solving skills</strong>.
 </p>
 
 ---
