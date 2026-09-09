@@ -307,7 +307,7 @@ Instead of focusing only on syntax, this assignment helped me practice **breakin
 </div>
 
 <p align="center">
-  Passionate about building <strong>modern, scalable, and user-focused web applications</strong> while continuously strengthening JavaScript, TypeScript, problem-solving, and full-stack development skills.
+  Passionate about building <strong>modern, scalable, and user-focused web applications</strong> while continuously strengthening <b><i>JavaScript, TypeScript, problem-solving, and full-stack development skills</i></b>.
 </p>
 
 ### 🚀 Tech Focus
