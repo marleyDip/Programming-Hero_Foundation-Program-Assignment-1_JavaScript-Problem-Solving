@@ -292,10 +292,12 @@ Instead of focusing only on syntax, this assignment helped me practice **breakin
   </p>
 
   <p align="center">
-    [![🌐 Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge)](https://marleydip.netlify.app/)
-    &nbsp;
-    [![💻 GitHub](https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github)](https://github.com/marleyDip)
-  </p>
+
+[![🌐 Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge)](https://marleydip.netlify.app/)
+&nbsp;
+[![💻 GitHub](https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github)](https://github.com/marleyDip)
+
+</p>
 
   <!-- <p>
     <a href="https://marleydip.netlify.app/" target="_blank"> <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge" alt="Portfolio" /> </a>
