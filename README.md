@@ -292,25 +292,22 @@ Instead of focusing only on syntax, this assignment helped me practice **breakin
   </p>
 
   <p>
-    <a href="https://marleydip.netlify.app/" target="_blank">
-      <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge" alt="Portfolio" />
-    </a>
-    <a href="https://github.com/marleyDip" target="_blank">
-      <img src="https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github" alt="GitHub Profile" />
-    </a>
+    <a href="https://marleydip.netlify.app/" target="_blank"> <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge" alt="Portfolio" /> </a>
+    
+    <a href="https://github.com/marleyDip" target="_blank"> <img src="https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github" alt="GitHub Profile" /> </a>
   </p>
 
 </div>
 
 <p align="center">
-  Passionate about building <strong>modern, scalable, and user-focused web applications</strong> while continuously strengthening JavaScript, problem-solving, and full-stack development skills.
+  Passionate about building <strong>modern, scalable, and user-focused web applications</strong> while continuously strengthening JavaScript, TypeScript, problem-solving, and full-stack development skills.
 </p>
 
 ### 🚀 Tech Focus
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=js,react,nextjs,nodejs,express,nestjs,mongodb,postgres" alt="Tech Stack" />
+<img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,nestjs,mongodb,postgres" alt="Tech Stack" />
 
 <br /><br />
 
