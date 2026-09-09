@@ -293,7 +293,6 @@ Instead of focusing only on syntax, this assignment helped me practice **breakin
 
   <p>
     <a href="https://marleydip.netlify.app/" target="_blank"> <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge" alt="Portfolio" /> </a>
-    
     <a href="https://github.com/marleyDip" target="_blank"> <img src="https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github" alt="GitHub Profile" /> </a>
   </p>
 
@@ -307,7 +306,7 @@ Instead of focusing only on syntax, this assignment helped me practice **breakin
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,nestjs,mongodb,postgres" alt="Tech Stack" />
+<img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,tailwind,nodejs,express,nestjs,mongodb,postgres" alt="Tech Stack" />
 
 <br /><br />
 
