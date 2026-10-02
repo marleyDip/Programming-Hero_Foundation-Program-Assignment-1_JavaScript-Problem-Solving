@@ -1,7 +1,6 @@
-// ==========================================
+// =============================
 // QUESTION 01 - VALUE DETECTIVE
-// ==========================================
-
+// =============================
 function describeValue(value) {
   const type = typeof value;
   const truthiness = value ? "truthy" : "falsy";
@@ -9,10 +8,9 @@ function describeValue(value) {
   return `${type} | ${truthiness}`;
 }
 
-// ==========================================
+// ========================================
 // QUESTION 02 - BANGLADESH WEEKEND MACHINE
-// ==========================================
-
+// ========================================
 function getDayType(day) {
   const lowerCaseDay = day.toLowerCase();
 
@@ -33,10 +31,9 @@ function getDayType(day) {
   }
 }
 
-// ==========================================
+// =================================
 // QUESTION 03 - USERNAME GATEKEEPER
-// ==========================================
-
+// =================================
 function validateUsername(username) {
   if (username.length < 4) {
     return "Too Short";
@@ -53,10 +50,9 @@ function validateUsername(username) {
   return "Available";
 }
 
-// ==========================================
+// ==================================
 // QUESTION 04 - DHAKA CNG FARE METER
-// ==========================================
-
+// ==================================
 function getCngFare(distance, isNight = false, waitingMinutes = 0) {
   // Minimum fare
   let fare = 50;
@@ -77,10 +73,9 @@ function getCngFare(distance, isNight = false, waitingMinutes = 0) {
   return fare;
 }
 
-// ==========================================
+// ===================================
 // QUESTION 05 - RUN CHASE COMMENTATOR
-// ==========================================
-
+// ===================================
 const getChaseVerdict = (target, scored, ballsLeft) => {
   // Calculate runs needed
   const runsNeeded = target - scored;
@@ -111,10 +106,9 @@ const getChaseVerdict = (target, scored, ballsLeft) => {
   return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${verdict}`;
 };
 
-// ==========================================
+// ===============
 // HELPER FUNCTION
-// ==========================================
-
+// ===============
 function showResult(elementId, message, type = "success") {
   const resultBox = document.getElementById(elementId);
 
@@ -127,11 +121,10 @@ function showResult(elementId, message, type = "success") {
   resultBox.classList.add(type);
 }
 
-// ==========================================
+// =================
 // QUESTION 01 - RUN
-// ==========================================
-
-document.getElementById("runValue").addEventListener("click", () => {
+// =================
+document.getElementById("valueBtn").addEventListener("click", () => {
   const input = document.getElementById("valueInput");
 
   const value = input.value;
@@ -173,61 +166,67 @@ document.getElementById("runValue").addEventListener("click", () => {
 
   const result = describeValue(parsedValue);
 
+  document.getElementById("valueInputDisplay").textContent = value;
+
   showResult("valueResult", result);
 });
 
-// ==========================================
+// =================
 // QUESTION 02 - RUN
-// ==========================================
+// =================
+document.getElementById("dayBtn").addEventListener("click", () => {
+  const input = document.getElementById("dayInput");
 
-document.getElementById("runDay").addEventListener("click", () => {
-  const day = document.getElementById("dayInput").value;
+  const day = input.value;
 
   if (day === "") {
     showResult("dayResult", "Please enter a day.", "error");
-
     return;
   }
 
   const result = getDayType(day);
 
+  document.getElementById("dayInputDisplay").textContent = day;
+
   showResult("dayResult", result);
 });
 
-// ==========================================
+// =================
 // QUESTION 03 - RUN
-// ==========================================
+// =================
+document.getElementById("usernameBtn").addEventListener("click", () => {
+  const input = document.getElementById("usernameInput");
 
-document.getElementById("runUsername").addEventListener("click", () => {
-  const username = document.getElementById("usernameInput").value;
+  const username = input.value;
 
   if (username === "") {
     showResult("usernameResult", "Please enter a username.", "error");
-
     return;
   }
 
   const result = validateUsername(username);
 
+  document.getElementById("usernameInputDisplay").textContent = username;
+
   showResult("usernameResult", result);
 });
 
-// ==========================================
+// =================
 // QUESTION 04 - RUN
-// ==========================================
+// =================
+document.getElementById("cngBtn").addEventListener("click", () => {
+  const distanceInput = document.getElementById("distanceInput");
+  const waitingInput = document.getElementById("waitingInput");
+  const nightInput = document.getElementById("nightInput");
 
-document.getElementById("runCng").addEventListener("click", () => {
-  const distance = Number(document.getElementById("distanceInput").value);
+  const distance = Number(distanceInput.value);
 
-  const waitingMinutes = Number(
-    document.getElementById("waitingInput").value || 0,
-  );
+  const waitingMinutes = Number(waitingInput.value || 0);
 
-  const isNight = document.getElementById("nightInput").checked;
+  const isNight = nightInput.checked;
 
-  if (document.getElementById("distanceInput").value === "") {
+  if (distanceInput.value === "") {
     showResult("cngResult", "Please enter the distance.", "error");
-
     return;
   }
 
@@ -243,27 +242,29 @@ document.getElementById("runCng").addEventListener("click", () => {
 
   const fare = getCngFare(distance, isNight, waitingMinutes);
 
+  document.getElementById("cngInputDisplay").textContent =
+    `${distance} km | ${waitingMinutes} min | ${isNight ? "Night" : "Day"}`;
+
   showResult("cngResult", `৳ ${fare.toFixed(2)}`);
 });
 
-// ==========================================
+// =================
 // QUESTION 05 - RUN
-// ==========================================
+// =================
+document.getElementById("chaseBtn").addEventListener("click", () => {
+  const targetInput = document.getElementById("targetInput");
+  const scoredInput = document.getElementById("scoredInput");
+  const ballsInput = document.getElementById("ballsInput");
 
-document.getElementById("runChase").addEventListener("click", () => {
-  const target = Number(document.getElementById("targetInput").value);
+  const target = Number(targetInput.value);
+  const scored = Number(scoredInput.value);
+  const ballsLeft = Number(ballsInput.value);
 
-  const scored = Number(document.getElementById("scoredInput").value);
-
-  const ballsLeft = Number(document.getElementById("ballsInput").value);
-
-  const targetInput = document.getElementById("targetInput").value;
-
-  const scoredInput = document.getElementById("scoredInput").value;
-
-  const ballsInput = document.getElementById("ballsInput").value;
-
-  if (targetInput === "" || scoredInput === "" || ballsInput === "") {
+  if (
+    targetInput.value === "" ||
+    scoredInput.value === "" ||
+    ballsInput.value === ""
+  ) {
     showResult("chaseResult", "Please fill in all fields.", "error");
 
     return;
@@ -277,13 +278,15 @@ document.getElementById("runChase").addEventListener("click", () => {
 
   const result = getChaseVerdict(target, scored, ballsLeft);
 
+  document.getElementById("chaseInputDisplay").textContent =
+    `Target: ${target} | Scored: ${scored} | Balls: ${ballsLeft}`;
+
   showResult("chaseResult", result);
 });
 
-// ==========================================
+// =================
 // ENTER KEY SUPPORT
-// ==========================================
-
+// =================
 document.querySelectorAll("input").forEach((input) => {
   input.addEventListener("keydown", (event) => {
     if (event.key !== "Enter") {
@@ -292,16 +295,15 @@ document.querySelectorAll("input").forEach((input) => {
 
     const card = input.closest(".problem-card");
 
-    const button = card.querySelector(".run-button");
+    const button = card.querySelector(".run-btn");
 
     button.click();
   });
 });
 
-// ==========================================
+// ===============
 // CONSOLE MESSAGE
-// ==========================================
-
+// ===============
 console.log("🚀 JavaScript Problem Solving Playground Loaded Successfully!");
 
 console.log("✅ 5/5 Problems Ready");
